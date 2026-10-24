@@ -10,7 +10,7 @@ window.RATING_CFG = {
 
 /* Google Analytics (GA4): يُحمَّل في كل صفحة تستدعي هذا الملف، ولا يُحتسب العمل المحلي (localhost) */
 (function () {
-  var id = 'G-XXXXXXXXXX', h = location.hostname;
+  var id = 'G-BB4Z76BWD1', h = location.hostname;
   if (!/^[\w-]+(\.[\w-]+)+$/.test(h) || /^\d+\.\d+\.\d+\.\d+$/.test(h)) return;
   window.dataLayer = window.dataLayer || [];
   window.gtag = function () { window.dataLayer.push(arguments); };
