@@ -2,7 +2,7 @@ window.RATING_CFG = {
   projectId: 'mr-word-dfead',
   apiKey: 'AIzaSyDLMwVex1MeZylTsGxrDrXBSf0-1A7FLHY',
   appId: '1:1054761668396:web:b480a7247e178b84d9e689',
-  recaptchaSiteKey: '',
+  recaptchaSiteKey: '6LdVTf4tAAAAABFuiFpkPvaF9ATU-hvsKnGn4sfW',
   recaptchaType: 'enterprise',
   /* رابط Worker الذي يرسل إشعارات Telegram (انظر TELEGRAM-SETUP.md). اتركه فارغاً لتعطيل الإشعارات. */
   notifyUrl: ''
