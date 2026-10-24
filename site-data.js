@@ -6,13 +6,13 @@ window.SITE = {
   },
   "hero": [
     {
-      "img": "image/hero/hero-1-bg.jpg"
+      "img": "image/hero/hero-1-bg-v3.jpg"
     },
     {
-      "img": "image/hero/hero-2-bg.jpg"
+      "img": "image/hero/hero-2-bg-v3.jpg"
     },
     {
-      "img": "image/hero/hero-3-bg.jpg"
+      "img": "image/hero/hero-3-bg-v3.jpg"
     }
   ]
 };
