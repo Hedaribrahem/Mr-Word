@@ -44,7 +44,15 @@
     });
     twT.delete(s);
   }
+  function twKick(s) { // أول مرة: ننتظر انتهاء main.js من الترجمة حتى لا يستبدل نص العنوان أثناء الكتابة
+    if (reduce) return;
+    if (document.readyState === 'loading') {
+      hero.classList.add('tw-wait');
+      document.addEventListener('DOMContentLoaded', function () { setTimeout(function () { twStart(s); }, 0); });
+    } else twStart(s);
+  }
   function twStart(s) {
+    hero.classList.remove('tw-wait');
     twStop(s);
     var els = [].slice.call(s.querySelectorAll('.hx-title .ln > span'));
     if (!els.length || reduce) return;
@@ -68,8 +76,8 @@
   function go(i) {
     var prev = cur;
     cur = (i + pages.length) % pages.length;
-    if (prev !== cur) twStop(slides[prev]);
-    twStart(slides[cur]);
+    if (prev !== cur) twStop(pages[prev]);
+    twKick(pages[cur]);
     ensure(cur); if (loaded) ensure((cur + 1) % pages.length);
     if (prev !== cur) {
       var old = pages[prev];
