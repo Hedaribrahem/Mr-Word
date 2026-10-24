@@ -117,7 +117,7 @@
   function indexHtml(list) {
     var P = pub(list), cats = [];
     P.forEach(function (a) { if (cats.indexOf(a.cat) < 0) cats.push(a.cat); });
-    var u = SITE + 'blog.html', desc = 'مقالات عملية عن تصميم المستندات في Word: ألوان وخطوط ورسوم بيانية وعروض المستثمرين ونصائح تختصر وقتك.';
+    var u = SITE + 'blog.html', desc = 'مقالات عملية عن تنسيق مستندات Word: الفهارس والأنماط والرسائل الجامعية والسير الذاتية ونصائح تختصر وقتك.';
     var ld = { '@context': 'https://schema.org', '@graph': [
       { '@type': 'CollectionPage', '@id': u + '#page', url: u, name: 'مدونة Mr Word', description: desc, inLanguage: 'ar', isPartOf: { '@id': SITE + '#website' }, publisher: { '@id': SITE + '#org' } },
       { '@type': 'BreadcrumbList', itemListElement: [

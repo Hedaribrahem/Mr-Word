@@ -265,7 +265,7 @@ const translations = {
     whatsapp_tooltip: 'تواصل معنا',
     privacy_label: 'قانوني',
     privacy_title: 'سياسة الخصوصية',
-    privacy_updated: 'آخر تحديث: مايو 2026',
+    privacy_updated: 'آخر تحديث: أكتوبر 2026',
     privacy_content: `<p>مرحباً بكم في موقع Mr Word. نحن نحرص على حماية خصوصية زوارنا وعملائنا، ونلتزم بالحفاظ على سرية المعلومات التي يتم مشاركتها معنا أثناء استخدام الموقع أو خدماتنا.</p>
         <h2>1. المعلومات التي نقوم بجمعها</h2>
         <p>قد نقوم بجمع بعض المعلومات عند استخدام الموقع أو التواصل معنا، مثل:</p>
@@ -286,12 +286,12 @@ const translations = {
         </ul>
         <p>ونحن لا نقوم ببيع أو مشاركة معلومات المستخدمين مع أي طرف ثالث لأغراض تجارية.</p>
         <h2>3. سرية الملفات والمحتوى</h2>
-        <p>جميع الملفات والعروض والمستندات التي يتم إرسالها إلينا تُعامل بسرية تامة، ويتم استخدامها فقط لتنفيذ الخدمة المطلوبة.</p>
+        <p>جميع الملفات والمستندات التي يتم إرسالها إلينا تُعامل بسرية تامة، ويتم استخدامها فقط لتنفيذ الخدمة المطلوبة.</p>
         <h2>4. ملفات تعريف الارتباط</h2>
-        <p>قد يستخدم الموقع ملفات تعريف الارتباط وتقنيات التحليل لتحسين الأداء ومعرفة كيفية استخدام الزوار للموقع.</p>
+        <p>يستخدم الموقع Google Analytics لقياس عدد الزوار والصفحات الأكثر زيارة وتحسين الأداء، وقد يضع ملفات تعريف ارتباط لهذا الغرض. كما نحفظ في متصفحك تفضيلات مثل اللغة والوضع الفاتح أو الداكن وما قيّمته، لتجنب التكرار.</p>
         <p>يمكن للمستخدم تعطيل ملفات تعريف الارتباط من خلال إعدادات المتصفح في أي وقت.</p>
         <h2>5. الروابط والخدمات الخارجية</h2>
-        <p>قد يحتوي الموقع على روابط لمنصات خارجية مثل واتساب أو مواقع التواصل الاجتماعي. نحن غير مسؤولين عن سياسات الخصوصية الخاصة بتلك المواقع الخارجية.</p>
+        <p>قد يحتوي الموقع على روابط لمنصات خارجية مثل واتساب أو مواقع التواصل الاجتماعي. نحن غير مسؤولين عن سياسات الخصوصية الخاصة بتلك المواقع الخارجية. كما نستخدم خدمات من Google لتشغيل الموقع: Firebase لحفظ الطلبات والتعليقات والتقييمات، وreCAPTCHA للحماية من الرسائل الآلية. وتصلنا إشعارات تيليغرام بنوع الحدث فقط (مثل طلب جديد) دون بياناتك. وتخضع هذه الخدمات لسياساتها الخاصة.</p>
         <h2>6. حماية البيانات</h2>
         <p>نحن نتخذ إجراءات مناسبة لحماية المعلومات من الوصول غير المصرح به أو الاستخدام أو التعديل أو الإفصاح.</p>
         <p>ومع ذلك، لا يمكن ضمان الأمان الكامل لأي عملية نقل بيانات عبر الإنترنت.</p>
@@ -310,12 +310,13 @@ const translations = {
     privacy_back_home: 'العودة إلى الصفحة الرئيسية',
     terms_label: 'قانوني',
     terms_title: 'شروط الاستخدام',
-    terms_updated: 'آخر تحديث: مايو 2026',
+    terms_updated: 'آخر تحديث: أكتوبر 2026',
     terms_content: `<p>مرحباً بكم في موقع Mr Word. باستخدامك لهذا الموقع أو طلبك لأي من خدماتنا، فإنك توافق على الالتزام بالشروط والأحكام التالية. يرجى قراءتها بعناية قبل استخدام الموقع.</p>
         <h2>1. استخدام الموقع</h2>
         <p>يُسمح باستخدام الموقع للأغراض القانونية فقط، ويُمنع استخدامه بأي طريقة قد تؤدي إلى الإضرار بالموقع أو تعطيل خدماته أو التأثير على تجربة المستخدمين الآخرين.</p>
         <h2>2. الخدمات المقدمة</h2>
         <p>يقدم الموقع خدمات تصميم وتطوير المستندات والمحتوى المرئي المرتبط بها. وقد تختلف تفاصيل الخدمات أو الأسعار أو مدة التنفيذ حسب طبيعة كل مشروع.</p>
+        <p>تشمل الخدمات مراجعتين مجانيتين بعد التسليم. ومدة التنفيذ المذكورة (48 إلى 72 ساعة) تقديرية وتختلف حسب حجم المستند وتعقيد التنسيق. ونلتزم بنص العميل كما هو دون تغيير في محتواه إلا بموافقته.</p>
         <h2>3. حقوق الملكية الفكرية</h2>
         <p>جميع التصاميم والمحتويات والشعارات والعناصر الموجودة في الموقع محمية بحقوق الملكية الفكرية، ولا يجوز نسخها أو إعادة استخدامها أو إعادة نشرها دون إذن مسبق.</p>
         <p>ويحتفظ العميل بحق استخدام العمل النهائي بعد تسليمه وفق الاتفاق المبرم بين الطرفين.</p>
@@ -615,7 +616,7 @@ const translations = {
     whatsapp_tooltip: 'Contact us',
     privacy_label: 'Legal',
     privacy_title: 'Privacy Policy',
-    privacy_updated: 'Last updated: May 2026',
+    privacy_updated: 'Last updated: October 2026',
     privacy_content: `<p>Welcome to Mr Word. We are committed to protecting the privacy of our visitors and clients, and we keep confidential the information shared with us while using the site or our services.</p>
         <h2>1. Information We Collect</h2>
         <p>We may collect some information when using the site or contacting us, such as:</p>
@@ -638,10 +639,10 @@ const translations = {
         <h2>3. Confidentiality of Files and Content</h2>
         <p>All files, documents, and documents submitted to us are treated with strict confidentiality and used only to perform the requested service.</p>
         <h2>4. Cookies</h2>
-        <p>The site may use cookies and analytics technologies to improve performance and learn how visitors use the site.</p>
+        <p>The site uses Google Analytics to count visitors and the most visited pages and to improve performance, and may set cookies for this purpose. We also store preferences in your browser, such as language, light or dark mode and what you have rated, to avoid repetition.</p>
         <p>Users can disable cookies through their browser settings at any time.</p>
         <h2>5. External Links and Services</h2>
-        <p>The site may contain links to external platforms such as WhatsApp or social media sites. We are not responsible for the privacy policies of those external sites.</p>
+        <p>The site may contain links to external platforms such as WhatsApp or social media sites. We are not responsible for the privacy policies of those external sites. We also use Google services to run the site: Firebase to store requests, comments and ratings, and reCAPTCHA to protect against automated messages. Telegram notifications tell us only the type of event (such as a new request), without your data. These services are subject to their own policies.</p>
         <h2>6. Data Protection</h2>
         <p>We take appropriate measures to protect information from unauthorized access, use, modification, or disclosure.</p>
         <p>However, complete security cannot be guaranteed for any data transfer over the Internet.</p>
@@ -660,12 +661,13 @@ const translations = {
     privacy_back_home: 'Return to Home',
     terms_label: 'Legal',
     terms_title: 'Terms of Use',
-    terms_updated: 'Last updated: May 2026',
+    terms_updated: 'Last updated: October 2026',
     terms_content: `<p>Welcome to Mr Word. By using this site or requesting any of our services, you agree to comply with the following terms and conditions. Please read them carefully before using the site.</p>
         <h2>1. Site Usage</h2>
         <p>The site may only be used for lawful purposes, and it is prohibited to use it in any way that may damage the site, disrupt its services, or negatively affect other users' experience.</p>
         <h2>2. Provided Services</h2>
         <p>The site provides document design and development services and related visual content. Service details, pricing, and delivery time may vary depending on each project's nature.</p>
+        <p>The services include two free revisions after delivery. The stated delivery time (48 to 72 hours) is an estimate and varies with the size of the document and the complexity of the formatting. We keep the client's text as it is and do not change its content without approval.</p>
         <h2>3. Intellectual Property Rights</h2>
         <p>All designs, content, logos, and elements on the site are protected by intellectual property rights and may not be copied, reused, or republished without prior permission.</p>
         <p>The client retains the right to use the final delivered work in accordance with the agreement between the parties.</p>
@@ -687,6 +689,94 @@ const translations = {
     terms_back_home: 'Return to Home'
   }
 };
+
+/* صياغة Word (تتغلب على التعريفات السابقة) */
+Object.assign(translations.ar, {
+ "hero_subtitle": "ننسّق ونصمّم مستندات Word احترافية تُقنع قارئها، ونُعلّم المهارات التي تُميّزك، ونُقدّم قوالب جاهزة تُوفر وقتك وتُضاعف جودة عملك.",
+ "badge_1": " مستند احترافي جاهز خلال 48 ساعة",
+ "services_subtitle": "خدمات احترافية تناسب جميع احتياجاتك في الكتابة والتنسيق",
+ "works_subtitle": "نماذج من مستنداتنا لعملاء من مختلف القطاعات",
+ "work_2": "مستندات للشركات",
+ "work_3": "رسائل وأبحاث جامعية",
+ "work_4": "تقارير وجداول",
+ "service_1_title": "تصميم وتنسيق المستندات الاحترافية",
+ "service_1_desc": "ننسّق ونصمّم لك التقارير والمقترحات والملفات الرسمية من الصفر، بمظهر مرتب يليق بك وبعملك.",
+ "service_1_feature_1": "تنسيق موحّد ومرتب",
+ "service_1_feature_2": "تسليم خلال 48-72 ساعة",
+ "service_1_feature_3": "مراجعتان مجانيتان",
+ "service_2_title": "تحسين المستندات الجاهزة",
+ "service_2_desc": "عندك مستند جاهز لكنه يبدو عادياً أو غير مرتب؟ نعيد تنسيقه ليصبح واضحاً ومنظماً وسهل القراءة دون تغيير محتواه.",
+ "service_2_feature_1": "إعادة تنسيق كاملة",
+ "service_2_feature_2": "ترتيب العناوين والفقرات",
+ "service_2_feature_3": "توحيد الخطوط والألوان",
+ "service_2_link": "اطلب التعديل",
+ "service_4_title": "الرسائل والأبحاث العلمية",
+ "service_4_desc": "ننسّق رسالتك أو بحثك وفق متطلبات الجامعة: الفهرس وترقيم الصفحات والمراجع والجداول والأشكال.",
+ "service_4_feature_1": "فهرس وترقيم تلقائي",
+ "service_4_feature_2": "تنسيق المراجع والهوامش",
+ "service_4_feature_3": "الالتزام بشروط الجامعة",
+ "service_4_link": "اطلب التنسيق",
+ "service_5_title": "السير الذاتية والمستندات الشخصية",
+ "service_5_desc": "نصمّم سيرتك الذاتية وخطابات التقديم والملفات الشخصية بتنسيق أنيق يبرز خبراتك ويلفت انتباه أصحاب العمل.",
+ "service_5_feature_1": "تصاميم عصرية وواضحة",
+ "service_5_feature_2": "مناسبة لأنظمة التوظيف",
+ "service_5_feature_3": "قابلة للتعديل في Word",
+ "service_5_link": "اطلب السيرة الذاتية",
+ "service_6_title": "توحيد هوية المستندات",
+ "service_6_desc": "نوحّد ألوانك وخطوطك وعناصرك البصرية في قالب واحد لكل مستندات مؤسستك.",
+ "service_6_feature_1": "دليل هوية للمستندات",
+ "service_6_feature_2": "تصميم الترويسة والتذييل والأنماط",
+ "process_title": "4 خطوات بسيطة للحصول على مستندك",
+ "cta_subtitle": "ابدأ اليوم واطلب قالبك الآن، أو تواصل معنا لطلب مخصص احترافي",
+ "footer_brand": "مستندات تُلهم، أفكار تُؤثّر. نُساعدك على التميز والإقناع بمستندات احترافية.",
+ "footer_service_1": "تصميم مستندات مخصصة",
+ "footer_product_2": "قوالب التقارير",
+ "footer_product_3": "قوالب السير الذاتية",
+ "template_cat_3": "تقارير ومقترحات",
+ "template_name_3": "تقارير ومقترحات"
+});
+Object.assign(translations.en, {
+ "hero_subtitle": "We format and design professional Word documents that win readers over, teach the skills that set you apart, and offer ready-made templates that save your time and raise the quality of your work.",
+ "badge_1": " Professional document ready in 48 hours",
+ "services_subtitle": "Professional services for all your writing and formatting needs",
+ "works_subtitle": "Samples of our documents for clients from various sectors",
+ "work_2": "Corporate Documents",
+ "work_3": "Theses & Research Papers",
+ "work_4": "Reports & Tables",
+ "service_1_title": "Professional Document Design & Formatting",
+ "service_1_desc": "We format and design reports, proposals and official files from scratch, with a clean, polished look that suits you and your work.",
+ "service_1_feature_1": "Consistent, tidy formatting",
+ "service_1_feature_2": "Delivery in 48-72h",
+ "service_1_feature_3": "2 Free Revisions",
+ "service_2_title": "Improve Existing Documents",
+ "service_2_desc": "Have a document that looks plain or messy? We reformat it to be clear, organized and easy to read, without changing your content.",
+ "service_2_feature_1": "Complete reformatting",
+ "service_2_feature_2": "Organized headings and paragraphs",
+ "service_2_feature_3": "Unified fonts and colors",
+ "service_2_link": "Request Edit",
+ "service_4_title": "Theses & Academic Papers",
+ "service_4_desc": "We format your thesis or paper to your university's requirements: table of contents, page numbering, references, tables and figures.",
+ "service_4_feature_1": "Automatic contents and numbering",
+ "service_4_feature_2": "References and footnotes",
+ "service_4_feature_3": "Meets university guidelines",
+ "service_4_link": "Order Formatting",
+ "service_5_title": "CVs & Personal Documents",
+ "service_5_desc": "We design your CV, cover letters and personal files with an elegant layout that highlights your experience and catches employers' attention.",
+ "service_5_feature_1": "Modern, clear designs",
+ "service_5_feature_2": "Friendly to hiring systems",
+ "service_5_feature_3": "Editable in Word",
+ "service_5_link": "Order CV",
+ "service_6_title": "Document Branding",
+ "service_6_desc": "We unify your colors, fonts and visual elements into one master template for all your organization's documents.",
+ "service_6_feature_1": "Document style guide",
+ "service_6_feature_2": "Headers, footers and styles",
+ "process_title": "4 Simple Steps to Get Your Document",
+ "footer_service_1": "Custom Documents",
+ "footer_product_2": "Report Templates",
+ "footer_product_3": "CV Templates",
+ "template_cat_3": "Reports & Proposals",
+ "template_name_3": "Reports & Proposals"
+});
 
 let currentLang = 'ar';
 

@@ -6,19 +6,19 @@
   var WA = '963935919037';
   var EN = function () { return document.documentElement.lang === 'en'; };
   var SV = [
-    ['s1', 'تصميم مستند احترافي', 'Professional document design'],
-    ['s2', 'تحويل عرض عادي إلى احترافي', 'Upgrade an existing document'],
+    ['s1', 'تنسيق وتصميم مستند احترافي', 'Professional document formatting & design'],
+    ['s2', 'تحسين مستند جاهز', 'Improve an existing document'],
     ['s3', 'قالب Word حسب هويتك', 'Custom branded template'],
-    ['s4', 'عرض للمستثمرين أو الشركات', 'Investor / corporate deck'],
-    ['s5', 'تحويل بيانات إلى إنفوغرافيك', 'Data to infographic'],
-    ['s6', 'توحيد هوية العروض', 'Document branding'],
+    ['s4', 'تنسيق رسالة أو بحث علمي', 'Thesis / academic paper formatting'],
+    ['s5', 'سيرة ذاتية ومستندات شخصية', 'CV & personal documents'],
+    ['s6', 'توحيد هوية المستندات', 'Document branding'],
     ['other', 'خدمة أخرى', 'Something else']
   ];
   var S = {
     ar: {
       label: 'اطلب خدمتك', title: 'أخبرنا عن مشروعك', sub: 'املأ النموذج وسنتواصل معك في أقرب وقت. بدون التزام.',
       name: 'الاسم', contact: 'واتساب أو بريد إلكتروني', service: 'الخدمة المطلوبة', pick: 'اختر الخدمة…',
-      desc: 'تفاصيل المشروع', descPh: 'عدد الصفحات تقريباً، موضوع العرض، المناسبة، أي ملاحظات…', dl: 'الموعد المطلوب (اختياري)', dlPh: 'مثال: خلال أسبوع',
+      desc: 'تفاصيل المشروع', descPh: 'عدد الصفحات تقريباً، نوع المستند، الغرض منه، أي ملاحظات…', dl: 'الموعد المطلوب (اختياري)', dlPh: 'مثال: خلال أسبوع',
       send: 'إرسال الطلب', sending: 'جارٍ الإرسال…',
       legal: 'بإرسال الطلب أنت توافق على <a href="privacy.html">سياسة الخصوصية</a>. نستخدم بياناتك للرد على طلبك فقط.',
       cta: 'اطلب عبر النموذج',
@@ -31,7 +31,7 @@
     en: {
       label: 'Request a service', title: 'Tell us about your project', sub: "Fill in the form and we'll get back to you soon. No commitment.",
       name: 'Name', contact: 'WhatsApp or email', service: 'Service needed', pick: 'Choose a service…',
-      desc: 'Project details', descPh: 'Approx. number of pages, topic, occasion, any notes…', dl: 'Deadline (optional)', dlPh: 'e.g. within a week',
+      desc: 'Project details', descPh: 'عدد الصفحات تقريباً، نوع المستند، الغرض منه، أي ملاحظات…', dl: 'Deadline (optional)', dlPh: 'e.g. within a week',
       send: 'Send request', sending: 'Sending…',
       legal: 'By sending this request you agree to the <a href="privacy.html">Privacy Policy</a>. We use your details only to reply to you.',
       cta: 'Request via form',

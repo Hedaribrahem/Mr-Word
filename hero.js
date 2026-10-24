@@ -33,9 +33,43 @@
   labels();
   new MutationObserver(labels).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
 
+  // ── كتابة العنوان حرفاً بحرف ──
+  var twT = new WeakMap();
+  function twStop(s) {
+    var st = twT.get(s); if (!st) return;
+    clearTimeout(st.t);
+    st.lines.forEach(function (L) {
+      if (L.el.textContent === L.last) L.el.textContent = L.full; // لم تُستبدل بترجمة: نعيد النص الكامل
+      L.el.parentNode.classList.remove('tw-cur');
+    });
+    twT.delete(s);
+  }
+  function twStart(s) {
+    twStop(s);
+    var els = [].slice.call(s.querySelectorAll('.hx-title .ln > span'));
+    if (!els.length || reduce) return;
+    var st = { li: 0, ci: 0, t: 0, lines: els.map(function (e) { return { el: e, full: e.textContent, chars: Array.from(e.textContent), last: '' }; }) };
+    st.lines.forEach(function (L) { L.el.textContent = ''; });
+    twT.set(s, st);
+    function tick() {
+      var L = st.lines[st.li]; if (!L) return;
+      if (L.el.textContent !== L.last) { twStop(s); return; } // استُبدل النص (تغيير اللغة): نتوقف
+      L.el.parentNode.classList.add('tw-cur');
+      if (st.ci < L.chars.length) {
+        st.ci++; L.last = L.chars.slice(0, st.ci).join(''); L.el.textContent = L.last;
+        st.t = setTimeout(tick, 34 + Math.random() * 34);
+      } else if (st.lines[st.li + 1]) {
+        L.el.parentNode.classList.remove('tw-cur'); st.li++; st.ci = 0; st.t = setTimeout(tick, 260);
+      }
+    }
+    st.t = setTimeout(tick, 350);
+  }
+
   function go(i) {
     var prev = cur;
     cur = (i + pages.length) % pages.length;
+    if (prev !== cur) twStop(slides[prev]);
+    twStart(slides[cur]);
     ensure(cur); if (loaded) ensure((cur + 1) % pages.length);
     if (prev !== cur) {
       var old = pages[prev];

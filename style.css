@@ -3349,3 +3349,10 @@ nav { background: rgba(var(--bg-rgb), 0.97); }
 /* ===== الخطوط المنحنية الجانبية: أوضح قليلاً ===== */
 body::before { opacity: 0.5; }
 body::after { opacity: 0.45; }
+
+/* ───── عنوان الهيرو: كتابة حرفاً بحرف بمؤشر وامض مثل محرر Word ───── */
+.hx-title .ln > span { transform: none !important; animation: none !important; }
+.hx-title .ln { min-height: 1.49em; }
+.hx-title .ln.tw-cur > span::after { content: ""; display: inline-block; width: 0.07em; height: 0.95em; margin-inline-start: 0.12em; vertical-align: -0.12em; background: currentColor; animation: twBlink 1s steps(1) infinite; }
+@keyframes twBlink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .hx-title .ln.tw-cur > span::after { animation: none; } }
