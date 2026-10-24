@@ -8,6 +8,16 @@
   // صور الصفحات من site-data.js (تُدار من لوحة التحكم).
   // الصفحة الأولى تُحمَّل فوراً، والبقية بعد اكتمال الصفحة (أو عند الاقتراب من عرضها) لتسريع أول ظهور.
   var cfg = window.SITE && window.SITE.hero;
+  // إن لم توجد الصورة بالامتداد المكتوب (jpg) نجرّب امتدادات أخرى بنفس الاسم قبل أن نتخلّى عنها
+  function fall(im, src) {
+    var base = src.replace(/\.[^.\/?]+$/, ''), ex = ['jpg', 'jpeg', 'png', 'webp', 'JPG', 'JPEG', 'PNG'], n = 0;
+    im.onerror = function () {
+      var e = ex[n++];
+      if (!e) { im.onerror = null; im.remove(); return; }
+      if (src.slice(-(e.length + 1)) === '.' + e) return im.onerror();
+      im.src = base + '.' + e;
+    };
+  }
   var pending = {}, loaded = false;
   function ensure(k) { var p = pending[k]; if (p) { p.im.src = p.src; delete pending[k]; } }
   pages.forEach(function (s, k) {
@@ -17,6 +27,7 @@
     var src = c && c.img ? encodeURI(c.img) : (im && im.getAttribute('data-src')) || '';
     if (!src) return;
     if (!im) { im = document.createElement('img'); im.alt = ''; im.decoding = 'async'; im.onerror = function () { im.remove(); }; bg.appendChild(im); }
+    fall(im, src);
     if (k === 0) { if (im.getAttribute('src') !== (c && c.img) && im.getAttribute('src') !== src) im.src = src; }
     else { im.removeAttribute('src'); pending[k] = { im: im, src: src }; }
   });
