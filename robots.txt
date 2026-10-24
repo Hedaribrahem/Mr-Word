@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hedaribrahem.github.io/Mr-Word/sitemap.xml
