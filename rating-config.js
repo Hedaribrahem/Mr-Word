@@ -5,7 +5,7 @@ window.RATING_CFG = {
   recaptchaSiteKey: '6LdVTf4tAAAAABFuiFpkPvaF9ATU-hvsKnGn4sfW',
   recaptchaType: 'enterprise',
   /* رابط Worker الذي يرسل إشعارات Telegram (انظر TELEGRAM-SETUP.md). اتركه فارغاً لتعطيل الإشعارات. */
-  notifyUrl: ''
+  notifyUrl: 'https://morning-bush-a7f6.hedar-ibrahem1.workers.dev/'
 };
 
 /* Google Analytics (GA4): يُحمَّل في كل صفحة تستدعي هذا الملف، ولا يُحتسب العمل المحلي (localhost) */
