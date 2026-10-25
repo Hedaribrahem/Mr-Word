@@ -7,6 +7,7 @@
   [].forEach.call(document.querySelectorAll('.strip-num[data-site]'), function (el) {
     var v = ST[el.getAttribute('data-site')];
     if (v == null) return;
+    if (+v === 0) el.setAttribute('data-pre', ''); // صفر: بدون علامة +
     el.setAttribute('data-to', v);
     el.textContent = (el.getAttribute('data-pre') || '') + (+v).toFixed(+el.getAttribute('data-dec') || 0) + (el.getAttribute('data-suf') || '');
   });
@@ -16,7 +17,8 @@
     var n = el.getAttribute('data-count') === 'templates'
       ? (window.TEMPLATES || []).filter(function (t) { return !t.bonus; }).length
       : (window.LESSONS || []).length;
-    if (n) { el.setAttribute('data-to', n); el.textContent = '+' + n; }
+    // نعرض الرقم الحقيقي دائماً (حتى لو كان صفراً) ولا نُبقي أي رقم وهمي مكتوب في الصفحة
+    el.setAttribute('data-to', n); el.setAttribute('data-pre', n ? '+' : ''); el.textContent = (n ? '+' : '') + n;
   });
 
   // ── عدّاد الأرقام: يبدأ سريعاً ثم يتباطأ حتى يقف على الرقم النهائي ──

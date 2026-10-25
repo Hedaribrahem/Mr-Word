@@ -830,6 +830,9 @@ function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
 function fillTokens(str) {
   const T = (window.TEMPLATES || []).filter((t) => !t.bonus).length;
   const L = (window.LESSONS || []).length;
+  // عندما لا توجد قوالب أو دروس بعد نحذف الرقم من الجملة بدل أن تظهر «0 قالباً»
+  if (!T) str = str.replace('{templates} قالباً جاهزاً', 'قوالب جاهزة').replace('{templates} modern, ready-to-download templates', 'Modern, ready-to-download templates');
+  if (!L) str = str.replace('{lessons} درساً تعليمياً', 'دروس تعليمية').replace('{lessons} YouTube lessons', 'YouTube lessons');
   return str.replace(/\{templates\}/g, T).replace(/\{lessons\}/g, L);
 }
 
