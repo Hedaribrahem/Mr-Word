@@ -2939,8 +2939,8 @@ body::before { left: 0; background-image: url('image/flow-a.svg'); background-si
 body::after { right: 0; background-image: url('image/flow-b.svg'); background-size: 320px 1900px; background-position: 100% 0; opacity: 0.28; }
 body:has(#home)::before, body:has(#home)::after { top: max(100svh, 600px); }
 @media (max-width: 768px) { body::before, body::after { width: 140px; } body::before { background-size: 140px 656px; } body::after { background-size: 140px 831px; } }
-body.light-mode::before { opacity: 0.34; }
-body.light-mode::after { opacity: 0.3; }
+body.light-mode::before { opacity: 0.3; }
+body.light-mode::after { opacity: 0.26; }
 #process { background: transparent !important; }
 
 /* ───────── v6: إبعاد مروحة الصفحات عن الخط الأوسط في خط القوالب الزمني ───────── */
@@ -3347,8 +3347,8 @@ nav { background: rgba(var(--bg-rgb), 0.97); }
 }
 
 /* ===== الخطوط المنحنية الجانبية: أوضح قليلاً ===== */
-body::before { opacity: 0.62; }
-body::after { opacity: 0.56; }
+body::before { opacity: 0.54; }
+body::after { opacity: 0.48; }
 
 /* ───── عنوان الهيرو: كتابة حرفاً بحرف بمؤشر وامض مثل محرر Word ───── */
 .hx-title .ln > span { transform: none !important; animation: none !important; }
