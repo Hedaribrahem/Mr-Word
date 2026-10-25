@@ -778,6 +778,48 @@ Object.assign(translations.en, {
  "template_name_3": "Reports & Proposals"
 });
 
+/* آراء العملاء الحقيقية من خمسات */
+Object.assign(translations.ar, {
+ "testimonial_1": "\"عمل ممتاز و احترافي و سريع , و تصميم جميل جدا يستاهل 10 نجوم\"",
+ "name_1": "احمد م",
+ "rr_1": "اح",
+ "testimonial_2": "\"ممتاز جدا ومتقن للعمل وسريع في التنفيذ\"",
+ "name_2": "جداره ب",
+ "rr_2": "جد",
+ "testimonial_3": "\"عمل رائع تشكر عليه استاذي\"",
+ "name_3": "بسمه ا",
+ "rr_3": "بس",
+ "testimonial_4": "\"خدمة ممتازة والتعامل راقٍ والتواصل والمتابعة كانت جيدة جدًا. كذلك تم الالتزام بوقت التسليم. أنصح بالتعامل معه وأتمنى له الاستمرار بنفس المستوى\"",
+ "name_4": "Anwaar A",
+ "rr_4": "An",
+ "testimonial_5": "\"عمل متقن متعاون وسريع .\"",
+ "name_5": "Bouthaina A",
+ "rr_5": "Bo",
+ "testimonial_6": "\"مشكورة جهودك عمل متقن جدآ\"",
+ "name_6": "غدير ع",
+ "rr_6": "غد"
+});
+Object.assign(translations.en, {
+ "testimonial_1": "\"Excellent, professional and fast work, and a very beautiful design. Worth 10 stars.\"",
+ "name_1": "Ahmed M.",
+ "rr_1": "Ah",
+ "testimonial_2": "\"Excellent and meticulous work, and fast delivery.\"",
+ "name_2": "Jadarah B.",
+ "rr_2": "Ja",
+ "testimonial_3": "\"Wonderful work, thank you, sir.\"",
+ "name_3": "Basmah A.",
+ "rr_3": "Ba",
+ "testimonial_4": "\"Excellent service, respectful dealing, and very good communication and follow-up. Delivery time was also respected. I recommend working with him and hope he keeps up the same level.\"",
+ "name_4": "Anwaar A.",
+ "rr_4": "An",
+ "testimonial_5": "\"Meticulous, cooperative and fast work.\"",
+ "name_5": "Bouthaina A.",
+ "rr_5": "Bo",
+ "testimonial_6": "\"Thank you for your efforts. Very meticulous work.\"",
+ "name_6": "Ghadeer A.",
+ "rr_6": "Gh"
+});
+
 let currentLang = 'ar';
 
 // تخزين آمن: قد يرمي localStorage خطأً (وضع خاص / تخزين محظور)

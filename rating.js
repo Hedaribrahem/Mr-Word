@@ -91,8 +91,9 @@
   }
   function listAll(col, each, tok) {
     return fx(base + '/' + col + '?pageSize=300&' + KEY + (tok ? '&pageToken=' + encodeURIComponent(tok) : ''))
-      .then(function (r) { return r.json(); })
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }) // فشل الطلب يجب ألا يُعامل كأنه "لا بيانات"
       .then(function (j) {
+        if (j && j.error) throw new Error('firestore');
         (j.documents || []).forEach(each);
         if (j.nextPageToken) return listAll(col, each, j.nextPageToken);
       });
@@ -341,14 +342,19 @@
     if (c && c.d) {
       Object.keys(c.d).forEach(function (k) { store[k] = c.d[k]; });
       cacheT = c.t || 0; paintAll(); fireData();
-      fresh = Date.now() - cacheT < CTTL;
+      fresh = Date.now() - cacheT < CTTL && Object.keys(c.d).length > 0; // قائمة فارغة محفوظة لا تُعتبر حديثة
     }
     if (fresh) return;
-    var next = {};
-    listAll('ratings', function (d) {
-      var f = d.fields || {};
-      next[d.name.split('/').pop()] = { sum: iv(f.sum), count: iv(f.count), n: iv(f.n) };
-    }).then(function () { store = next; cacheT = Date.now(); saveCache(); paintAll(); fireData(); }).catch(function () {});
+    // عند الفشل نُبقي الأرقام المخزّنة كما هي ونعيد المحاولة بعد 5 ثم 20 ثم 60 ثانية
+    var tries = 0, wait = [5000, 20000, 60000];
+    (function load() {
+      var next = {};
+      listAll('ratings', function (d) {
+        var f = d.fields || {};
+        next[d.name.split('/').pop()] = { sum: iv(f.sum), count: iv(f.count), n: iv(f.n) };
+      }).then(function () { store = next; cacheT = Date.now(); saveCache(); paintAll(); fireData(); })
+        .catch(function () { if (tries < wait.length) setTimeout(load, wait[tries++]); });
+    })();
   }
   if (acOn && document.readyState !== 'complete') window.addEventListener('load', function () { setTimeout(boot, 200); });
   else if (acOn) setTimeout(boot, 200);

@@ -27,9 +27,39 @@
 
   <url>
     <loc>https://hedaribrahem.github.io/Mr-Word/blog.html</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hedaribrahem.github.io/Mr-Word/blog/page-numbers-in-word.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hedaribrahem.github.io/Mr-Word/blog/convert-word-to-pdf.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hedaribrahem.github.io/Mr-Word/blog/delete-blank-page-in-word.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hedaribrahem.github.io/Mr-Word/blog/rtl-ltr-text-direction-word.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hedaribrahem.github.io/Mr-Word/blog/apa-references-in-word.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://hedaribrahem.github.io/Mr-Word/blog/automatic-table-of-contents-word.html</loc>
