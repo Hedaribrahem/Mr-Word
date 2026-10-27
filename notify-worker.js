@@ -2,7 +2,7 @@
    المتغيرات المطلوبة (Settings ← Variables and Secrets):
      BOT_TOKEN       (Secret)  مفتاح البوت من @BotFather
      CHAT_ID         (Secret)  رقم محادثتك مع البوت
-     ALLOWED_ORIGINS (Text)    https://hedaribrahem.github.io
+     ALLOWED_ORIGINS (Text)    https://mr-word.net,https://www.mr-word.net
    لا يُرسل أي اسم أو بريد أو نص من الزائر، فقط نوع الحدث (والخدمة المطلوبة عند الطلبات). */
 const TITLES = {
   request: '📩 طلب خدمة جديد',
